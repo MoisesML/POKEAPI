@@ -1,0 +1,121 @@
+@font-face {
+    font-family: DoHyeon;
+    src: url(./Font/DoHyeon-Regular.woff)
+}
+
+@font-face {
+    font-family: Yanone;
+    src: url(./Font/YanoneKaffeesatz-ExtraLight.woff)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    margin: 0;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    font-family: DoHyeon;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav img{
+    height: 100%;
+}
+
+h2{
+    text-transform: uppercase;
+    background-color: rgb(145, 71, 255);
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.content-main{
+    /* border: 1px black solid; */
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuPrincipal{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+.menuBotones{
+    display: flex;
+    height: 40px;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+.botones{
+    align-content: center;
+    height: 40px;
+    width: 30%;
+}
+
+#Buscar #Borrar{
+    height: 10px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+h1{
+    padding: 20px;
+    width: 60%;
+    font-weight: bold;
+    align-items: center;
+}
+
+.pokemon{
+    font-family: DoHyeon;
+    border: 2px rgb(145, 71, 255) solid;
+    width: 22%;
+    /* height: 200px; */
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 10px auto 10px auto;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-family: Yanone;
+    padding: 5px 0 5px 0;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1090px){
+    .pokemon{
+        width: 27%;
+    }
+}
+
+@media (max-width: 850px){
+    .pokemon{
+        width: 40%;
+    }
+}
